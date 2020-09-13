@@ -26,6 +26,19 @@ foreach ($Path in $UnquotedPath){
 # sample instruction
 dir c:\temp
 
+Clear-Host
+ 
+$ErrorActionPreference = 'silentlycontinue'
+ 
+$LocalHotFixPath = 'D:\Patches\'
+ 
+$SvrList = Get-Content 'D:\Patches\servers.txt'
+  
+$HotFixes = @(
+        # seperate KBs using commas
+        'KB4499175-x64.msu'       
+)
+
 if ($counter -ne 1)
 {
 Write-output ("No vulnerabilites found on $hostname")   | Out-File $ResultsLogFile -Append
