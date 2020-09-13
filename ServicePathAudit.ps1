@@ -1,4 +1,6 @@
-﻿   
+# Adding some comments about the script 
+
+
 $ResultsLogFile = "C:\Temp\results.log"
 $HostName = $env:COMPUTERNAME
 $counter = 2
