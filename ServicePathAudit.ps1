@@ -1,7 +1,7 @@
 ﻿   
 $ResultsLogFile = "C:\Temp\results.log"
 $HostName = $env:COMPUTERNAME
-$counter = 0
+$counter = 2
 
 # Gather Services information from WMI
 $Services = Get-WmiObject -Class win32_service -Property name,pathname
@@ -22,6 +22,9 @@ foreach ($Path in $UnquotedPath){
         $counter = 1
     } # End conditional operators
 } # End Foreach Path in UnquotedPath
+
+# sample instruction
+dir c:\temp
 
 if ($counter -ne 1)
 {
