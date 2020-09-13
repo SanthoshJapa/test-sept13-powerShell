@@ -1,5 +1,6 @@
 # Adding some comments about the script 
-
+# Script goes to every services, If service path have any spaces and the path is not included in Quotes, 
+# the script will write the service name and path to output file 
 
 $ResultsLogFile = "C:\Temp\results.log"
 $HostName = $env:COMPUTERNAME
