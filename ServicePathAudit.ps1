@@ -4,7 +4,7 @@
 
 $ResultsLogFile = "C:\Temp\results.log"
 $HostName = $env:COMPUTERNAME
-$counter = 4
+$counter = 20
 
 # Gather Services information from WMI
 $Services = Get-WmiObject -Class win32_service -Property name,pathname
